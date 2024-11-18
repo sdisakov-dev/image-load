@@ -1,0 +1,2 @@
+<img *ngIf="imageUrl$ | async as imageUrl" [src]="imageUrl" alt="Загружаемое изображение">
+<div *ngIf="(imageUrl$ | async) === ''">Ошибка загрузки изображения</div>
